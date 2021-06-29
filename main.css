@@ -1,0 +1,325 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*css設定*/
+/*常用*/
+*{
+	box-sizing: border-box;
+}
+.container{
+	width: 1200px;
+	margin: 0 auto;
+	margin-top: 50px;	
+}
+.clearfix:after {
+	content:'';
+	display: block;
+	clear: both;
+  }
+
+
+
+a{
+	text-decoration: none;
+}
+
+/*header*/
+.header>.container{
+	margin: 0 auto;
+}
+.topbar{
+	background-color:#f6f6f6;
+	padding: 5px;	
+}
+
+.nav li{
+	float:right;
+}
+.nav a{	
+	font-size:15px;
+}
+
+.facebook div, .twitter div{
+	display: inline;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+.facebook a{
+	color:#8294bd;
+}
+
+.twitter a{
+	color:#81cbf0;
+}
+
+.topblock img{
+	float: left;	
+}
+
+.topblock a{
+	font-size: 20px;
+}
+
+.cross{
+	position: relative;
+}
+
+.cross img{
+	width: 1200px;
+}
+
+.cross h1{
+	font-size:40px ;
+	color:white;
+}
+
+.shadow{	
+	position: absolute;
+	width: 1200px;
+	position: absolute;
+	top:37%;
+	padding:20px 0 20px 20px;
+	background-color: rgba(180,180,180, 0.1);
+}			
+
+
+.topblock ul{
+	float:right;	
+}
+
+.topblock li{
+	float: left;
+}
+
+.topblock a{
+	margin: 10px;
+	color: #8fe9d2;
+	line-height:52px;	
+}
+
+/*content*/
+.Introduction >ul{
+	display: flex;			
+}
+
+.Introduction h3{
+	font-weight: bold;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	text-align: center;
+	font-size: 20px;
+}
+
+.Introduction p{
+	line-height: 1.5;	
+}
+
+.Introduction img{
+	display: block;
+	margin: 0 auto;
+}
+
+.html, .rwd, .jQurey{
+	border:1px solid black ;
+	width: 400px;
+	margin-right: 20px;
+	padding: 20px;
+}
+
+.rwd img{
+	margin-top: 10px;
+}
+
+.rwd h3{
+	margin-top: 55px;
+}
+
+.jQurey h3{
+	margin-top:30px; ;
+}
+
+.jQurey li{
+	list-style-type:disc;
+	margin-left: 20px;
+	line-height:1.5 ;
+}
+
+
+.compare{
+	text-align: center;
+}
+
+h2{
+	margin-bottom: 20px;
+	font-weight: bold;
+	font-size: 24px;
+}
+
+.title{
+	display: block;
+	margin-top:20px;
+	margin-bottom: 40px;	
+}
+
+.compare table{
+	width: 1200px;
+	margin: 0 auto;	
+}
+
+.compare th{
+	background-color: #f6f5f8;
+	font-weight: bold;
+}
+
+.compare td,  .compare th, .compare tr{
+	padding: 15px;
+}
+
+.compare tr, .compare th, .compare td{
+	border-bottom: 1px solid #e2e2e2;	
+}
+
+.table{
+	border-collapse:collapse;
+}
+
+.green{
+	color:#a4cdc5 ;
+}
+
+form{
+	display: flex;
+}
+
+textarea{
+	border: 1px solid black ;
+	width:50%;
+	height: 300px;
+}
+
+.information{
+	background-image:url(https://raw.githubusercontent.com/wei-ling-chan/images/main/form-bg.png) ;
+	background-repeat:repeat-x;
+	background-color:#009671;
+	padding: 30px;	
+}
+
+.information h2{
+	text-align: center;
+	color: white;
+}
+
+.info{
+	width:50%;	
+	margin-left: 40px;
+}
+
+.space{
+	margin-bottom: 20px;
+	width: 100%;
+	color: white;
+	font-size: 20px;
+}
+
+.space:nth-child(3){
+	margin-bottom: 30px;
+}
+
+label{
+	display: block;
+	width: 100%;
+	margin-bottom: 10px;
+	
+}
+
+input{
+	display: block;
+	width: 100%;
+	padding: 8px;
+}
+
+input[type="submit"]{
+	width: 100px;
+	height:50px;
+	float: right;
+	background-color:#00cc99;
+	border-radius: 5px;
+	font-size: 20px;
+	color: white;
+	line-height: 32px;
+}
+
+/*footer*/
+label{
+	display: inline;
+	font-size: 20px;		
+}
+.footerBlack{
+	padding:20px;
+}
+
+.footerBlack img{
+	float: left;
+}
+
+.footerBlack .info{
+	float: right;
+	color: black;
+	text-align:right;
+}
+
+.footerBlack a{
+	color: red;
+	font-size:20px;
+}
+
+.e-mail{
+	margin-bottom: 10px;
+}
